@@ -1,0 +1,103 @@
+.wrapper {
+  position: relative;
+}
+
+.blurGreen {
+  position: absolute;
+  left: -190px;
+  width: 437px;
+  height: 248px;
+  border-radius: 448px;
+  background: #055847;
+  filter: blur(147px);
+  z-index: -1;
+}
+
+.wrapper h1 {
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #f6f6f7 0%, #7e808f 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 106.25%;
+}
+
+.textWrapper h5 {
+  color: #d8d8d8;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-block: 30px 25px;
+}
+
+.startedGrid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+
+
+.card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+}
+
+.card h6 {
+  color: #d8d8d8;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .startedGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .textWrapper h1,
+  .textWrapper > h5 {
+    text-align: center;
+  }
+
+  .textWrapper h5 {
+    margin-bottom: 50px;
+  }
+
+  .video {
+    order: 1;
+  }
+
+  .textWrapper {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .video {
+    height: 250px;
+  }
+  .blurGreen {
+    width: 100%;
+  }
+}

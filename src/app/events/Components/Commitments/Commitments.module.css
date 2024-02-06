@@ -1,0 +1,102 @@
+.cardsGrid,
+.commitGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.numberClass {
+  color: var(--white-color);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.card h5 {
+  color: #d8d8d8;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* max-width: 210px; */
+}
+
+.rightSide h1 {
+  font-weight: 700;
+  line-height: 3.125rem;
+
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #f6f6f7 0%, #7e808f 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rightSide > h5 {
+  margin-block: 15px;
+  color: #d8d8d8;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.learnMore {
+  color: var(--green-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.learnMore:hover {
+  color: var(--white-color);
+}
+
+.learnMore h5 {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.learnMore > svg {
+  rotate: 180deg;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .commitGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .card h5 {
+    margin-inline: auto;
+  }
+
+  .cardsGrid {
+    order: 2;
+  }
+
+  .rightSide {
+    text-align: center;
+  }
+
+  .learnMore {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card h5 {
+    max-width: unset;
+  }
+}

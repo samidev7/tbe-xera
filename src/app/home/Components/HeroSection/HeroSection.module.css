@@ -1,0 +1,197 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: 7.688rem;
+}
+.leftSide {
+  margin-inline: 60px;
+  position: relative;
+}
+.leftSide::after {
+  background-image: url('../../../../Assets/images/leftSidehC.svg');
+  background-repeat: no-repeat;
+  content: '';
+  width: 42.438rem;
+  height: 42.438rem;
+  position: absolute;
+  top: -50%;
+  transform: translate(-20%, -12%);
+  z-index: -1;
+}
+.rightSide {
+  position: relative;
+  text-align: end;
+}
+
+.rightSide::after {
+  background-image: url('../../../../Assets/images/rightSideHalfCircle.svg');
+  background-repeat: no-repeat;
+  content: '';
+  width: 42.438rem;
+  height: 42.438rem;
+  position: absolute;
+  top: -50%;
+  transform: translate(-45%, -12%);
+  z-index: -1;
+}
+.counterRight {
+  margin-right: 60px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+  background-image: url('../../../../Assets/images/HeroBg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 44.875rem;
+}
+
+.miniTitle {
+  max-width: 495px;
+  color: #ccc;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.title {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 849px;
+}
+.colorFulTitle {
+  color: #14c585;
+}
+.arrowButton {
+  border-radius: 50%;
+  border: 1px solid #626262;
+  height: 7.063rem;
+  width: 7.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.arrowButton:hover {
+  border: 1px solid transparent;
+  background-color: #14c585;
+}
+.icon {
+  font-size: 1.89rem;
+  color: #ffffff;
+}
+.arrowButton:hover .icon {
+  color: #000;
+}
+.number {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.numberText {
+  color: #ccc;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.devider {
+  margin-block: 60px;
+  background: #353535;
+  width: 121px;
+  height: 2px;
+}
+.deviderRight {
+  margin: 60px;
+  background: #353535;
+  width: 121px;
+  height: 2px;
+}
+@media screen and (min-width: 2000px) {
+  .rightSide::after,
+  .leftSide::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .rightSide::after,
+  .leftSide::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 20px;
+    margin: auto;
+    padding-top: 0;
+  }
+  .devider,
+  .deviderRight {
+    display: none;
+  }
+  .rightSide::after,
+  .leftSide::after {
+    display: none;
+  }
+  .leftSide,
+  .rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+  }
+  .counterRight {
+    margin-right: 0px;
+  }
+  .leftSide {
+    margin-inline: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    gap: 1rem;
+  }
+
+  .hero h4 {
+    margin-top: 30px;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .arrowButton {
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}

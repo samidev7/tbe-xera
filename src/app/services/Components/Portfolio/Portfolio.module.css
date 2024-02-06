@@ -1,0 +1,167 @@
+.portfolio > h1,
+.portfolio > h5 {
+  text-align: center;
+}
+
+.portfolio h1 {
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #f6f6f7 0%, #7e808f 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 106.25%; /* 106.25% */
+}
+
+.portfolio > h5 {
+  color: #d8d8d8;
+  font-weight: 400;
+  line-height: 133.333%; /* 133.333% */
+  margin-block: 20px 80px;
+  max-width: 852px;
+  margin-inline: auto;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.cardsGrid > div:nth-of-type(1) {
+  grid-row: 1/2;
+}
+
+.cardsGrid > div:nth-of-type(2) {
+  grid-row: 2/3;
+}
+
+.cardsGrid > div:nth-of-type(3) {
+  grid-row: 1/3;
+}
+
+.card {
+  padding: 20px;
+}
+
+.cardAlt {
+  padding-top: 20px;
+}
+
+.card,
+.cardAlt {
+  border-radius: 8px;
+  border: 1px solid rgba(64, 64, 64, 0.17);
+  background: linear-gradient(
+    0deg,
+    rgba(64, 64, 64, 0.17) 0%,
+    rgba(64, 64, 64, 0) 100%
+  );
+  background-blend-mode: overlay, normal;
+  /* backdrop-filter: blur(50px); */
+}
+
+.card h3 {
+  margin-block: 15px 20px;
+}
+
+.card h3,
+.cardAlt h3 {
+  color: #f6f6f7;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.72px;
+}
+
+.cardAlt h3,
+.cardAlt h6 {
+  padding-inline: 20px;
+}
+
+.cardAlt h6 {
+  margin-block: 20px 30px;
+}
+
+.card h6,
+.cardAlt h6 {
+  color: #d8d8d8;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardAlt {
+  padding-bottom: 0;
+}
+
+.cardAlt img {
+  margin-inline: auto;
+}
+
+.iphoneImage {
+  margin-top: auto;
+  height: 350px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .iphoneImage {
+    margin-inline: unset;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio > h5 {
+    margin-bottom: 60px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .cardsGrid > div:nth-of-type(1) {
+    grid-row: unset;
+  }
+
+  .cardsGrid > div:nth-of-type(2) {
+    grid-row: unset;
+  }
+
+  .cardsGrid > div:nth-of-type(3) {
+    grid-row: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cardsGrid {
+    row-gap: 30px;
+  }
+  .portfolio > h5 {
+    margin-bottom: 50px;
+  }
+
+  .iphoneImage {
+    height: 250px;
+  }
+
+  .card,
+  .cardAlt h3,
+  .cardAlt h6 {
+    padding-inline: 15px;
+  }
+}

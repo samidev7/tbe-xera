@@ -1,0 +1,32 @@
+.head {
+  display: flex;
+  gap: 2rem;
+}
+
+.head h1:nth-of-type(1) {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.head h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: normal;
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #f6f6f7 0%, #7e808f 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 576px) {
+  .head {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

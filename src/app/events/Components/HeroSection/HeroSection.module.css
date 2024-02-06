@@ -1,0 +1,64 @@
+.heroWrapper {
+  background: url("../../../../Assets/images/eventsHeroBG.png") center / cover
+    no-repeat;
+  padding-block: 100px 450px;
+}
+
+.hero h1 {
+  background: linear-gradient(180deg, #f6f6f7 0%, #d8d8d8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -1.68px;
+  max-width: 680px;
+}
+
+.hero h3 {
+  max-width: 672px;
+  color: #ccc;
+  font-weight: 500;
+  margin-block: 25px 50px;
+  line-height: normal;
+}
+
+.exploreBtn {
+  margin-inline: auto;
+  max-width: fit-content;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--white, #fff);
+  color: var(--white-color);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.exploreBtn:hover {
+  background: var(--green-color);
+  color: black;
+  border: 1px solid transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .heroWrapper {
+    padding-top: 80px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1,
+  .hero h3 {
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroWrapper {
+    padding-top: 50px;
+  }
+}

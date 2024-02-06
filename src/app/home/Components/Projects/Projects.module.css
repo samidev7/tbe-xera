@@ -1,0 +1,117 @@
+.subTitle {
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-block: 3.125rem 4.375rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.projectImage {
+  border-radius: 25px;
+  border: 1px solid rgba(80, 80, 80, 0.6);
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(50px);
+  width: 100%;
+  height: 415px;
+  transition: all 0.3s ease;
+}
+.projectImage:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(68, 133, 84, 0.6);
+}
+.projectLink {
+  width: 100%;
+  /* height: 143px; */
+  border-radius: 20px;
+  margin-bottom: 25px;
+  background: url('../../../../Assets/images/projectLink.png') center / cover
+    no-repeat;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 55px;
+  gap: 10px;
+  text-align: initial !important;
+}
+
+.projectLink h3 {
+  margin-bottom: 10px;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.projectLink h5 {
+  font-weight: 500;
+  line-height: normal;
+}
+
+.linkBtn {
+  border-radius: 50%;
+  background: var(--white-color);
+  height: 55px;
+  width: 55px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.linkBtn svg {
+  rotate: 135deg;
+  font-size: 30px;
+}
+
+.linkBtn:hover {
+  color: #fff;
+  background: var(--green-color);
+}
+
+.project h3 {
+  margin-block: 25px 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.project h5 {
+  color: var(--grey-text-color);
+  font-weight: 400;
+  line-height: 157.4%;
+}
+
+@media screen and (max-width: 991px) {
+  .subTitle {
+    text-align: center;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 90px;
+  }
+
+  .projectImage,
+  .projectLink {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projectLink {
+    padding: 20px;
+  }
+}

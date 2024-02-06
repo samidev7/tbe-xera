@@ -1,0 +1,202 @@
+.joinersContainer {
+  margin-block: 50px 40px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.joinersContainer > img {
+  width: 181.035px;
+  height: 47px;
+}
+
+.joinersContainer h2 {
+  color: var(--grey-text-color);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.joinersContainer h2 span {
+  color: var(--green-color);
+}
+
+.joinersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.joinersGrid > div:nth-of-type(1) {
+  grid-column: 1/3;
+}
+
+.ranks,
+.flow,
+.chart {
+  border-radius: 20px;
+  border: 1px solid rgba(80, 80, 80, 0.6);
+  background: rgba(255, 2555, 255, 0.02);
+  min-height: 297px;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.5s;
+}
+.ranks:hover,
+.flow:hover,
+.chart:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(68, 133, 84, 0.6);
+}
+.ranks,
+.chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.ranksRightImage {
+  background: url("../../../../Assets/images/ranksIMG.png") right / contain
+    no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.chartRightImage {
+  background: url("../../../../Assets/images/chartJoiners.png") center / contain
+    no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.chart {
+  margin-top: 25px;
+}
+
+.ranks img,
+.chart img {
+  filter: blur(90.5px);
+  position: absolute;
+  bottom: -120px;
+}
+
+.flow img {
+  bottom: -100px;
+  rotate: 90deg;
+  left: -280px;
+  filter: blur(90.5px);
+  position: absolute;
+}
+
+.flowBottomImage {
+  background: url("../../../../Assets/images/userstree.png") top / contain
+    no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.flow .textWrapper {
+  padding: 40px 40px 10px 40px;
+}
+
+.textWrapper {
+  padding-left: 30px;
+}
+
+.textWrapper h3 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.textWrapper h6 {
+  color: var(--grey-text-color);
+  font-weight: 400;
+  line-height: 157.4%;
+}
+
+@media screen and (max-width: 991px) {
+  .joinersGrid {
+    grid-template-columns: 1fr;
+    gap: unset;
+  }
+
+  .chart {
+    margin-bottom: 25px;
+  }
+
+  .flow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .flow .textWrapper {
+    padding: 40px 40px 40px 40px;
+  }
+  
+  .flow img {
+    bottom: -120px;
+    left: unset;
+    rotate: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .joinersContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ranks,
+  .chart,
+  .flow {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .textWrapper {
+    order: 2;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .flowBottomImage,
+  .ranksRightImage,
+  .chartRightImage {
+    height: 300px;
+    background-position: center;
+  }
+
+  .flowBottomImage {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .joinersContainer > img {
+    margin-inline: auto;
+  }
+
+  .joinersContainer h2 {
+    text-align: center;
+  }
+
+  .textWrapper {
+    padding-top: unset;
+    padding-inline: 15px;
+  }
+
+  .ranksRightImage,
+  .chartRightImage {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .flow .textWrapper {
+    padding: 15px;
+  }
+}

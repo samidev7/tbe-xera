@@ -1,0 +1,153 @@
+.heroWrapper {
+  /* background: url("../../../../Assets/images/servicesLinesHeroBG.png") center /
+    cover no-repeat; */
+  padding-block: 40px 150px;
+  position: relative;
+}
+
+.heroWrapper > img {
+  position: absolute;
+  z-index: -1;
+}
+
+.heroWrapper > img:nth-of-type(1) {
+  top: -100px;
+  filter: blur(25px);
+}
+
+.heroWrapper > img:nth-of-type(2) {
+  right: 0;
+  top: -100px;
+}
+
+.leftLine,
+.leftLineBlur {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 18px;
+  height: 471px;
+  border-radius: 8px;
+  background: url("../../../../Assets/images/bluredLine.png") center / cover
+    no-repeat;
+}
+
+.leftLineBlur {
+  filter: blur(12px);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.textWrapper {
+  position: relative;
+  padding-left: 70px;
+}
+
+.textWrapper h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 114.286%;
+  letter-spacing: -1.68px;
+  max-width: 564px;
+
+  background: linear-gradient(180deg, #f6f6f7 0%, #d8d8d8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textWrapper h3 {
+  margin-block: 40px 60px;
+  color: #ccc;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 472px;
+}
+
+.exploreBtn {
+  max-width: fit-content;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--white, #fff);
+  color: var(--white-color);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  white-space: nowrap;
+}
+
+.exploreBtn:hover {
+  background: var(--green-color);
+  color: black;
+  border: 1px solid transparent;
+}
+
+.imageWrapper {
+  background: url("../../../../Assets/images/sphereWithCubesServicesHer.png")
+    center / cover no-repeat;
+  width: 100%;
+  min-height: 645px;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroWrapper > img {
+    width: 100%;
+  }
+
+  .heroWrapper {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heroWrapper > img:nth-of-type(1) {
+    max-height: 900px;
+  }
+
+  .imageWrapper {
+    display: none;
+    order: 1;
+  }
+
+  .heroGrid > img {
+    display: flex;
+    width: 100%;
+  }
+
+  .textWrapper {
+    order: 2;
+    margin-inline: auto;
+    text-align: center;
+    padding-left: unset;
+  }
+
+  .textWrapper h1,
+  .textWrapper h3 {
+    max-width: unset;
+  }
+
+  .leftLine,
+  .leftLineBlur {
+    display: none;
+  }
+
+  .exploreBtn {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroWrapper {
+    padding-bottom: 100px;
+  }
+}

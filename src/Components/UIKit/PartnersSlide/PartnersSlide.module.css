@@ -1,0 +1,137 @@
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slider {
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 15px;
+  margin-top: 50px;
+}
+
+.btnLeft,
+.btnRight {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+  border: 1px solid #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnRight {
+  rotate: 180deg;
+}
+
+.card,
+.cardActive {
+  width: 16.25rem;
+  height: 16.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.card .link,
+.card:hover .link,
+.cardActive .link {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 4.688rem;
+  height: 4.688rem;
+  border: 1px solid transparent;
+  background: var(--green-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .link {
+  opacity: 0;
+}
+
+.card:hover .link,
+.cardActive .link {
+  opacity: 1;
+  animation: fadeInScale 0.5s ease-in-out;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.card {
+  background: transparent;
+  border: 1px solid #353535;
+}
+
+.cardActive,
+.card {
+  position: relative;
+}
+
+.cardActive,
+.card:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.link svg {
+  rotate: 135deg;
+  font-size: 1.563rem;
+}
+
+.link:hover {
+  background: #353535;
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    border: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btnLeft,
+  .btnRight {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .card,
+  .cardActive {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .cardActive img,
+  .card img {
+    max-width: 9rem;
+    max-height: 5.5rem;
+  }
+
+  .card .link,
+  .card:hover .link,
+  .cardActive .link {
+    width: 3rem;
+    height: 3rem;
+  }
+}

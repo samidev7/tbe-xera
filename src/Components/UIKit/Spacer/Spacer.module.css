@@ -1,0 +1,19 @@
+.wrapper {
+  margin-block: 140px;
+}
+.smallWrapper {
+  margin-block: 80px;
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    margin-block: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper,
+  .smallWrapper {
+    margin-block: 60px;
+  }
+}

@@ -1,0 +1,130 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5rem;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.mainTitle {
+  color: #afafaf;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 4.063rem;
+}
+.mainTitle span {
+  color: #fff;
+  margin-right: 2rem;
+}
+.singleCard {
+  width: 100%;
+  padding: 1.18rem;
+}
+.allCards {
+  display: flex;
+  align-items: center;
+  gap: 6.25rem;
+}
+.year {
+  color: #07f9c8;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.year::after {
+  content: url('../../../../Assets/icons/PolygonAboutRoadMap.svg');
+  position: absolute;
+  bottom: -41px;
+  left: 0px;
+  z-index: -1;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #959595;
+  position: absolute;
+}
+
+.cardTitle {
+  margin-top: 59px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.cardContent {
+  margin-top: 13px;
+  color: #d9d9d9;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.swiperButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-right: 40px;
+}
+.btnLeft,
+.btnRight {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+  border: 1px solid #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.btnRight {
+  rotate: 180deg;
+}
+.btnLeft:hover,
+.btnRight:hover {
+  background: #07f9c8;
+  color: #353535;
+  border: 1px solid #353535;
+}
+.topwrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .swiperButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .topwrapper {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0rem;
+  }
+}

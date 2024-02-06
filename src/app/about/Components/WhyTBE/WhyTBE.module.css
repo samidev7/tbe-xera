@@ -1,0 +1,176 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.mainTitle {
+  color: #afafaf;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 4.063rem;
+}
+.mainTitle span {
+  color: #fff;
+  margin-right: 2rem;
+}
+.flexWrapper {
+  margin-top: 4.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.textWrapper {
+  max-width: 532px;
+}
+.title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 157.4%;
+  margin-bottom: 0.75rem;
+}
+.content,
+.contentList {
+  color: #cecece;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 157.4%;
+}
+.contentList {
+  list-style-type: disc;
+  padding-left: 18px;
+}
+.gridWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.top {
+  width: 449px;
+  height: 167px;
+  border-radius: 20px;
+  border: 1px solid rgba(80, 80, 80, 0.6);
+  background: linear-gradient(0deg, #9c9c9c 0%, #9c9c9c 100%),
+    linear-gradient(0deg, rgba(64, 64, 64, 0.17) 0%, rgba(64, 64, 64, 0) 100%);
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(50px);
+  background-image: url('../../../../Assets/images/aboutTopCard.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+.cardContent,
+.cardContentLeft,
+.cardContentRight {
+  max-width: 257px;
+  color: #cecece;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 157.4%;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.left {
+  border: 1px solid rgba(80, 80, 80, 0.6);
+  width: 216px;
+  height: 224px;
+  border-radius: 20px;
+  fill: linear-gradient(0deg, #9c9c9c 0%, #9c9c9c 100%),
+    linear-gradient(0deg, rgba(64, 64, 64, 0.17) 0%, rgba(64, 64, 64, 0) 100%);
+  stroke-width: 1px;
+  stroke: rgba(80, 80, 80, 0.6);
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(50px);
+  background-image: url('../../../../Assets/images/aboutLeftCard.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  transition: all 0.35s ease;
+  padding: 23px 17px;
+}
+.cardContentLeft {
+  max-width: 178px;
+}
+.right {
+  width: 216px;
+  height: 224px;
+  border-radius: 20px;
+  border: 1px solid rgba(80, 80, 80, 0.6);
+  background: #00000077;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(50px);
+  padding: 23px 17px;
+  background-image: url('../../../../Assets/images/aboutRightCard.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.35s ease;
+}
+.right:hover,
+.left:hover,
+.top:hover {
+  transform: translateY(-5px);
+  border: 1px solid rgba(68, 133, 84, 0.6);
+}
+.cardContentRight {
+  max-width: 164px;
+}
+@media screen and (max-width: 991px) {
+  .flexWrapper {
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    text-align: center;
+  }
+  .contentList {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainTitle span {
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .bottom {
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .top {
+    width: 216px;
+    height: 224px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-position: -10%;
+    background-size: cover;
+  }
+  .cardContent {
+    max-width: 178px;
+    padding: 23px 17px;
+  }
+}
