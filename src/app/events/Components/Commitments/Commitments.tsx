@@ -62,7 +62,7 @@ const Commitments: React.FC = () => {
         <div className={Style.rightSide}>
           <h1>What to Expect</h1>
           <h5>
-            At The Blockchain Era events, you{"'"}ll experience a harmonious
+            At XERA events, you{"'"}ll experience a harmonious
             blend of education, networking, and personal development, designed
             to set you on the path to blockchain mastery.
           </h5>

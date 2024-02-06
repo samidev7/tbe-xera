@@ -36,23 +36,23 @@ interface SingleCardActiveProps {
 const cards = [
   {
     firsttext:
-      " TBE takes blockchain technology's inherent virtues of security and transparency to the next level. Our premium products stand as paragons of innovation and quality, encapsulating the freshest breakthroughs in the blockchain sphere. Rest easy knowing you're equipped with trustworthy and state-of-the-art solutions.",
+      " XERA takes blockchain technology's inherent virtues of security and transparency to the next level. Our premium products stand as paragons of innovation and quality, encapsulating the freshest breakthroughs in the blockchain sphere. Rest easy knowing you're equipped with trustworthy and state-of-the-art solutions.",
     thirdtext:
-      "Experience the full scope of blockchain's potential with TBE. Achieve your aspirations in the digital frontier—click to explore our product range now.",
+      "Experience the full scope of blockchain's potential with XERA. Achieve your aspirations in the digital frontier—click to explore our product range now.",
     image: sliderOne,
   },
   {
     firsttext:
-      "Community drives the blockchain, and at TBE, it's no different. Our products are not just tools but bridges to a larger community of innovators, strategists, and pioneers. TBE’s community collaboration features amplify collective wisdom and create a support network that turns aspirations into achievements.",
+      "Community drives the blockchain, and at XERA, it's no different. Our products are not just tools but bridges to a larger community of innovators, strategists, and pioneers. XERA’s community collaboration features amplify collective wisdom and create a support network that turns aspirations into achievements.",
     thirdtext:
-      "Ready to be part of something bigger? Explore TBE's community-centric products and amplify your impact today.",
+      "Ready to be part of something bigger? Explore XERA's community-centric products and amplify your impact today.",
     image: sliderTwo,
   },
   {
     firsttext:
-      "User experience is at the heart of TBE's product philosophy. Our platforms are carefully designed to be as intuitive as they are powerful. Navigating through complex blockchain systems has never been easier or more straightforward. With TBE, you get a simple user interface without compromising on capability.",
+      "User experience is at the heart of XERA's product philosophy. Our platforms are carefully designed to be as intuitive as they are powerful. Navigating through complex blockchain systems has never been easier or more straightforward. With XERA, you get a simple user interface without compromising on capability.",
     thirdtext:
-      "Why settle for complexity when simplicity can be so powerful? Experience TBE's user-friendly platforms by clicking here.",
+      "Why settle for complexity when simplicity can be so powerful? Experience XERA's user-friendly platforms by clicking here.",
     image: sliderThree,
   },
 ];

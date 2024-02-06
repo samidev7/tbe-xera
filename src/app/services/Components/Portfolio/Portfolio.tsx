@@ -27,7 +27,7 @@ const data = [
   {
     icon: portfolioIconOne,
     title: "Marketing Tools",
-    text: " Level up your marketing strategies with TBE's advanced marketing tools designed for optimum reach and engagement.",
+    text: " Level up your marketing strategies with XERA's advanced marketing tools designed for optimum reach and engagement.",
   },
   {
     icon: portfolioIconTwo,
@@ -47,7 +47,7 @@ const data = [
   {
     icon: portfolioIconFour,
     title: "Powerful Partner",
-    text: "With TBE as your partner, unlock unparalleled support and resources to propel your business or personal ventures to new heights.",
+    text: "With XERA as your partner, unlock unparalleled support and resources to propel your business or personal ventures to new heights.",
   },
 ];
 

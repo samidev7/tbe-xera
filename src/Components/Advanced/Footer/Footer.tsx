@@ -16,11 +16,18 @@ import Container from "@/Components/UIKit/Container/Container";
 import config from "@/data/config";
 
 // Images
-import logo from "@/Assets/images/logoBlockChainERa.png";
+import logo from "@/Assets/logos/Logo.svg";
 
 // Icons
 import { BiArrowBack } from "react-icons/bi";
-import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTelegram,
+  FaLinkedin,
+  FaYoutube,
+  FaTiktok,
+} from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 
 import { BsCheck } from "react-icons/bs";
@@ -57,18 +64,16 @@ const Footer: React.FC = () => {
             </h1>
           ) : path === "services" ? (
             <h1>
-              Don{"'"}t Follow the Future – Create It in{" "}
-              <span>The Blockchain Era</span>{" "}
+              Don{"'"}t Follow the Future – Create It in <span>XERA</span>{" "}
             </h1>
           ) : path === "events" ? (
             <h1>
-              Change Your World, One Block at a Time:{" "}
-              <span>The Blockchain Era </span>{" "}
+              Change Your World, One Block at a Time: <span>XERA </span>{" "}
             </h1>
           ) : (
             <h1>
               Infinite Possibilities, One Platform:
-              <span> The Blockchain Era</span>{" "}
+              <span> XERA</span>{" "}
             </h1>
           )}
           <div className={Style.rightTitles}>
@@ -93,11 +98,10 @@ const Footer: React.FC = () => {
               <Image src={logo} alt="Logo" />
             </Link>
             <h6>
-              The Blockchain Era unites individuals under the mission of
-              leveraging modern technologies to empower people and transform
-              society. We{"'"}re not just a community; we{"'"}re a movement
-              aiming to redefine industries and shape a fair, empowering future
-              for all.
+              XERA unites individuals under the mission of leveraging modern
+              technologies to empower people and transform society. We{"'"}re
+              not just a community; we{"'"}re a movement aiming to redefine
+              industries and shape a fair, empowering future for all.
             </h6>
           </div>
           <div className={Style.links}>
@@ -210,24 +214,36 @@ const Footer: React.FC = () => {
           </div> */}
         </div>
         <div className={Style.footerBottom}>
-          <h6>BlockchainEra. All Rights Reserved. © 2024</h6>
+          <h6>XERA. All Rights Reserved. © 2024</h6>
           <div className={Style.socialsWrapper}>
             <h6>Follow on socials:</h6>
             <div className={Style.socials}>
-              <a href="https://www.facebook.com/theblockera" target="_blank">
-                <FaFacebookF />
-              </a>
               <a
-                href="https://www.instagram.com/the.blockchain.era/"
+                href="https://www.facebook.com/xerapro.official/"
                 target="_blank"
               >
+                <FaFacebookF />
+              </a>
+              <a href="https://www.instagram.com/xerapro/" target="_blank">
                 <FaInstagram />
               </a>
-              <a href="https://twitter.com/theblockera" target="_blank">
+              <a href="https://twitter.com/xera_pro" target="_blank">
                 <RiTwitterXLine />
               </a>
-              <a href="https://t.me/theblockchainera" target="_blank">
+              <a href="https://t.me/xerapro" target="_blank">
                 <FaTelegram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/xerapro/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
+              <a href="https://www.youtube.com/@xerapro" target="_blank">
+                <FaYoutube />
+              </a>
+              <a href="https://www.youtube.com/@xerapro" target="_blank">
+                <FaTiktok />
               </a>
             </div>
           </div>

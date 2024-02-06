@@ -16,7 +16,7 @@ const HeroSection = () => {
       <Container>
         <div className={Style.wrapper}>
           <h3 className={Style.title}>
-            Join The Blockchain Era and Be a Pioneer in Shaping a Fair,
+            Join XERA and Be a Pioneer in Shaping a Fair,
             Empowering Future Through Technology
           </h3>
           <p className={Style.content}>

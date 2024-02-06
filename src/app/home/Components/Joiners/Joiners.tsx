@@ -34,7 +34,7 @@ const Joiners: React.FC = () => {
             <div className={Style.textWrapper}>
               <h3> Climb the Ranks: Your Digital Career Awaits</h3>
               <h6>
-                TBE offers you the unique opportunity to climb the ranks in a
+                 XERA offers you the unique opportunity to climb the ranks in a
                 dynamic, fast-paced digital career. With various ranks and
                 milestones, your potential for growth and development is
                 limitless. Turn your passion for blockchain into a rewarding
@@ -48,7 +48,7 @@ const Joiners: React.FC = () => {
             <div className={Style.textWrapper}>
               <h3> Reap the Rewards: The Freedom to Excel</h3>
               <h6>
-                At TBE, we believe in recognizing and rewarding your hard work.
+                At XERA, we believe in recognizing and rewarding your hard work.
                 Our comprehensive rewards program ensures that your
                 contributions don{"'"}t just benefit the community, they pave
                 the way for your personal freedom.

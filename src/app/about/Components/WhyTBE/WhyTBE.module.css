@@ -165,8 +165,8 @@
     width: 216px;
     height: 224px;
     align-items: flex-start;
-    justify-content: flex-start;
-    background-position: -10%;
+    justify-content: center;
+    background-position: left;
     background-size: cover;
   }
   .cardContent {

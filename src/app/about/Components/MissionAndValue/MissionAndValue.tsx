@@ -20,7 +20,7 @@ const MissionAndValue: React.FC = () => {
             <div className={Style.cardWrapper}>
               <h4 className={Style.title}> Our Mission</h4>
               <p className={Style.content}>
-                The Blockchain Era exists to catalyze transformation at the
+                XERA exists to catalyze transformation at the
                 intersection of technology, community, and individual
                 empowerment. Our mission is to harness the game-changing
                 capabilities of blockchain technology, coupled with AI and other
@@ -34,7 +34,7 @@ const MissionAndValue: React.FC = () => {
             <div className={Style.cardWrapper}>
               <h4 className={Style.title}>Our Values</h4>
               <p className={Style.content}>
-                At the core of The Blockchain Era are values that steer us
+                At the core of XERA are values that steer us
                 towards our vision: Integrity, Transparency, and Community. We
                 believe in doing business openly, honestly, and accountability.
                 We invest in creating a supportive and inclusive environment

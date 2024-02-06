@@ -365,10 +365,3 @@
     opacity: 1;
   }
 }
-
-@media screen and (max-width: 576px) {
-  .logoImage {
-    max-height: 21.02px;
-    max-width: 22.34px;
-  }
-}

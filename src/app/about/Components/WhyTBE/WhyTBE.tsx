@@ -1,19 +1,22 @@
 import React from "react";
+
 // Component
 import Container from "@/Components/UIKit/Container/Container";
+import TextHead from "@/Components/UIKit/TextHead/TextHead";
+
 // Style
 import Style from "./WhyTBE.module.css";
-import TextHead from "@/Components/UIKit/TextHead/TextHead";
+
 const WhyTBE = () => {
   return (
     <Container>
       <div className={Style.wrapper}>
-        <TextHead value="01" title="Why Choose The Blockchain Era?" />
+        <TextHead value="01" title="Why Choose XERA?" />
         <div className={Style.flexWrapper}>
           <div className={Style.textWrapper}>
             <h4 className={Style.title}> A Truly International Community</h4>
             <p className={Style.content}>
-              When you join The Blockchain Era, you become part of a global
+              When you join XERA, you become part of a global
               network of innovators, experts, and enthusiasts. We span multiple
               countries and continents, coming together to create a promising
               future for all. Connect with industry professionals, participate
@@ -42,12 +45,12 @@ const GridCard: React.FC = () => {
       <div className={Style.bottom}>
         <div className={Style.left}>
           <p className={Style.cardContentLeft}>
-          Cutting-Edge Products in a Winning Ecosystem.
+            Cutting-Edge Products in a Winning Ecosystem.
           </p>
         </div>
         <div className={Style.right}>
           <p className={Style.cardContentRight}>
-          Experience the Best Personal Growth in the World.
+            Experience the Best Personal Growth in the World.
           </p>
         </div>
       </div>

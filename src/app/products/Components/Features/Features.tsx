@@ -27,37 +27,37 @@ const data = [
     image: featureOneIcon,
     title: "Blockchain Solutions",
     subTitle:
-      "Leverage TBE's avant-garde blockchain technology for secure, transparent, and hyper-efficient digital interactions.",
+      "Leverage XERA's avant-garde blockchain technology for secure, transparent, and hyper-efficient digital interactions.",
   },
   {
     image: featureTwoIcon,
     title: "Cutting-Edge Tech Suite ",
     subTitle:
-      "Dive into TBE's premier tech offerings, architected to catapult both your personal and business ventures into a future of efficiency, security, and innovation.",
+      "Dive into XERA's premier tech offerings, architected to catapult both your personal and business ventures into a future of efficiency, security, and innovation.",
   },
   {
     image: featureThreeIcon,
     title: "Collaborative Ecosystem",
     subTitle:
-      "Immerse yourself in TBE's robust community of blockchain aficionados, experts, and visionaries, collectively striving for innovation and success.",
+      "Immerse yourself in XERA's robust community of blockchain aficionados, experts, and visionaries, collectively striving for innovation and success.",
   },
   {
     image: featureFourIcon,
     title: "Financial Empowerment",
     subTitle:
-      "Gain true financial autonomy with TBE’s invaluable educational resources, pragmatic tools, and ongoing support, guiding you to take the reins of your fiscal future.",
+      "Gain true financial autonomy with XERA's invaluable educational resources, pragmatic tools, and ongoing support, guiding you to take the reins of your fiscal future.",
   },
   {
     image: featureFiveIcon,
     title: "Incentive-Driven Rewards",
     subTitle:
-      "Thrive within TBE's dynamic rewards ecosystem, designed to commend your contributions, foster excellence, and amplify your impact.",
+      "Thrive within XERA's dynamic rewards ecosystem, designed to commend your contributions, foster excellence, and amplify your impact.",
   },
   {
     image: featureSixIcon,
     title: "Intuitive User Experience",
     subTitle:
-      "Navigate TBE’s seamlessly designed platform, optimizing your interaction with, and adoption of, blockchain technologies and services.",
+      "Navigate XERA’s seamlessly designed platform, optimizing your interaction with, and adoption of, blockchain technologies and services.",
   },
 ];
 
@@ -65,9 +65,9 @@ const Features: React.FC = () => {
   return (
     <Container>
       <div className={Style.head}>
-        <h1>Key Features of TBE{"'"}s Revolutionary Offerings</h1>
+        <h1>Key Features of XERA{"'"}s Revolutionary Offerings</h1>
         <h5>
-          Bridging your ambitions with groundbreaking blockchain technology, TBE
+          Bridging your ambitions with groundbreaking blockchain technology, XERA
           equips you with all the tools you need for a transformative journey.
         </h5>
       </div>

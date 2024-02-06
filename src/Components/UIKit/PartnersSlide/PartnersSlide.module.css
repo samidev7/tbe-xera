@@ -12,25 +12,26 @@
 .slider {
   max-width: 1440px;
   margin-inline: auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  /* display: flex;
+  align-items: center; */
+  /* gap: 20px; */
   padding-inline: 15px;
   margin-top: 50px;
+  position: relative;
 }
 
 .btnLeft,
 .btnRight {
+  display: none;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   background: transparent;
   flex-shrink: 0;
   border: 1px solid #353535;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  position: absolute;
+  z-index: 4;
 }
 
 .btnRight {
@@ -103,9 +104,26 @@
   color: var(--white-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .card {
     border: unset;
+  }
+  .btnLeft,
+  .btnRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnLeft {
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+  }
+  .btnRight {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(50%, 50%);
   }
 }
 
@@ -133,5 +151,19 @@
   .cardActive .link {
     width: 3rem;
     height: 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .btnLeft {
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+  }
+  .btnRight {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translate(50%, 50%);
   }
 }

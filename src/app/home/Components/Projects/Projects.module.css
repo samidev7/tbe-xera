@@ -15,16 +15,16 @@
   gap: 15px;
 }
 
-.projectImage {
+.project img {
+  width: 100%;
+  max-width: 445px;
   border-radius: 25px;
   border: 1px solid rgba(80, 80, 80, 0.6);
-  background-blend-mode: overlay, normal;
-  backdrop-filter: blur(50px);
-  width: 100%;
-  height: 415px;
   transition: all 0.3s ease;
+  backdrop-filter: blur(50px);
 }
-.projectImage:hover {
+
+.project img:hover {
   transform: translateY(-8px);
   border: 1px solid rgba(68, 133, 84, 0.6);
 }
@@ -33,7 +33,7 @@
   /* height: 143px; */
   border-radius: 20px;
   margin-bottom: 25px;
-  background: url('../../../../Assets/images/projectLink.png') center / cover
+  background: url("../../../../Assets/images/projectLink.png") center / cover
     no-repeat;
   padding: 40px;
   display: grid;
@@ -103,7 +103,6 @@
     gap: 90px;
   }
 
-  .projectImage,
   .projectLink {
     max-width: 600px;
     margin-inline: auto;
@@ -113,5 +112,11 @@
 @media screen and (max-width: 576px) {
   .projectLink {
     padding: 20px;
+  }
+}
+
+@media screen and(max-width:426px) {
+  .project img {
+    max-height: 300px;
   }
 }

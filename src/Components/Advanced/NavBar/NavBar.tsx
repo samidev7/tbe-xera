@@ -1,55 +1,53 @@
-'use client'
-import { useState } from 'react'
+"use client";
+import { useState } from "react";
 
 // Component
-import Link from 'next/link'
-import Container from '../../UIKit/Container/Container'
-import Image from 'next/image'
+import Link from "next/link";
+import Container from "../../UIKit/Container/Container";
+import Image from "next/image";
 
 // Data
-import config from '@/data/config'
+import config from "@/data/config";
 
 // Hooks
-import useWindowSize from '@/Hooks/useWindowSize'
+import useWindowSize from "@/Hooks/useWindowSize";
 // Icons
-import { IoIosArrowDown } from 'react-icons/io'
-import { TfiHeadphoneAlt } from 'react-icons/tfi'
+import { IoIosArrowDown } from "react-icons/io";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 // Images
-import LogoHalf from '@/Assets/images/blokchainEraLogoHAlf.png'
-import Logo from '@/Assets/logos/Logo.svg'
-import HeadSet from '@/Assets/icons/headSet.svg'
+import Logo from "@/Assets/logos/Logo.svg";
 
 // Styles
-import Style from './NavBar.module.css'
+import Style from "./NavBar.module.css";
 
 const dropDownOne = [
   {
-    title: 'Products',
-    link: '/products',
+    title: "Products",
+    link: "/products",
   },
   {
-    title: 'Services',
-    link: '/services',
+    title: "Services",
+    link: "/services",
   },
-]
+];
 
 const twoDropDown = [
   {
-    title: 'Login',
+    title: "Login",
     link: config.LOGIN_URL,
   },
   {
-    title: 'Register',
+    title: "Register",
     link: config.REGISTER_URL,
   },
-]
+];
 const Navbar = () => {
-  const { width } = useWindowSize()
+  const { width } = useWindowSize();
   return (
     <header>{width && width > 1223 ? <DeskTopNav /> : <MobileNav />}</header>
-  )
-}
+  );
+};
 const DeskTopNav = () => {
   return (
     <Container>
@@ -87,7 +85,7 @@ const DeskTopNav = () => {
                       {item.title}
                     </a>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -102,21 +100,21 @@ const DeskTopNav = () => {
         </div>
       </div>
     </Container>
-  )
-}
+  );
+};
 
 const MobileNav = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const { width } = useWindowSize()
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { width } = useWindowSize();
 
-  const [dropDown, setDropDown] = useState(false)
-  const [dropDownTwo, setDropDownTwo] = useState(false)
+  const [dropDown, setDropDown] = useState(false);
+  const [dropDownTwo, setDropDownTwo] = useState(false);
 
-  if (typeof document !== 'undefined') {
+  if (typeof document !== "undefined") {
     if (menuOpen) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = "unset";
     }
   }
 
@@ -130,16 +128,12 @@ const MobileNav = () => {
             <Container>
               <div className={Style.mobileNavHeader}>
                 <Link onClick={() => setMenuOpen(false)} href="/">
-                  <Image
-                    src={width && width < 576 ? LogoHalf : Logo}
-                    alt=""
-                    className={Style.logoImage}
-                  />
+                  <Image src={Logo} alt="" className={Style.logoImage} />
                 </Link>
                 <div
                   className={menuOpen ? Style.hamburgerActive : Style.hamburger}
                   onClick={() => {
-                    setMenuOpen((old) => !old)
+                    setMenuOpen((old) => !old);
                   }}
                 >
                   <span></span>
@@ -164,7 +158,7 @@ const MobileNav = () => {
                           : Style.productMobileActive
                       }`}
                     >
-                      Discover New Era{' '}
+                      Discover New Era{" "}
                       <IoIosArrowDown className={Style.dropDownIcon} />
                     </h6>
                     <div
@@ -184,7 +178,7 @@ const MobileNav = () => {
                               <p>{item.title}</p>
                             </Link>
                           </div>
-                        )
+                        );
                       })}
                     </div>
                   </div>
@@ -220,7 +214,7 @@ const MobileNav = () => {
                           >
                             <p>{item.title}</p>
                           </a>
-                        )
+                        );
                       })}
                     </div>
                   </div>
@@ -239,6 +233,6 @@ const MobileNav = () => {
         </div>
       </div>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;

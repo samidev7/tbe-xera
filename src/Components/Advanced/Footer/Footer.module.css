@@ -129,6 +129,7 @@
 .socials {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -312,6 +313,11 @@
   .socialsWrapper {
     flex-direction: column;
   }
+
+  .socials {
+    justify-content: center;
+  }
+
   .footerBottom {
     margin-top: 50px;
   }

@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
       <Container>
         <div className={Style.hero}>
           <div className={Style.linkWrapper}>
-            <h6>Connect, Produce, Maximize: The Blockchain Era Begins</h6>
+            <h6>Connect, Produce, Maximize: XERA Begins</h6>
             <a
               href={config.REGISTER_URL}
               target="_blank"
@@ -31,9 +31,9 @@ const HeroSection: React.FC = () => {
               <BiArrowBack />
             </a>
           </div>
-          <h1>Explore the Future: TBE{"'"}s Innovative Products</h1>
+          <h1>Explore the Future: XERA{"'"}s Innovative Products</h1>
           <h3>
-            Unlock a world of possibilities with TBE{"'"}s innovative blockchain
+            Unlock a world of possibilities with XERA{"'"}s innovative blockchain
             products and services tailored to elevate your digital experience.
           </h3>
           <a

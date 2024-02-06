@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
           <h1>
             {" "}
             Unlock Limitless Potential: Experience the Game-Changing Impact of
-            The Blockchain Era Events
+            XERA Events
           </h1>
           <h3>
             Engage, learn, and network with leading experts and innovators in

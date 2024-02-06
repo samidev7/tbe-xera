@@ -21,6 +21,8 @@ import { BiArrowBack } from "react-icons/bi";
 // Images
 import freedom from "@/Assets/images/freedomNationLogo.png";
 import block from "@/Assets/images/bidLogo.png";
+import kMAllLogo from "@/Assets/logos/kMAllLogo.png"
+import accessLogo from "@/Assets/logos/2accessLogo.svg"
 // import bolt from "@/Assets/images/lyoTradeLogo.png";
 // import lyoTech from "@/Assets/images/lyoTechLogo.png";
 // import sLogo from "@/Assets/icons/sLogoIcon.svg";
@@ -53,21 +55,22 @@ const cars = [
   //   href: "https://m.lyotrade.com/",
   // },
   {
-    logo: block,
-    href: "https://myblockchainid.io/",
+    logo: kMAllLogo,
+    href: "https://kmall.io",
   },
   // {
   //   logo: freedom,
   //   href: "https://thefreedomnation.io/",
   // },
   {
-    logo: lfi,
-    href: "https://lfi.io/",
+    logo: accessLogo,
+    href: "https://2access.io/",
   },
 ];
 
 const PartnersSlide: React.FC<TitleProps> = ({ value }) => {
   const swiperRef = useRef<SwiperRef>();
+
   return (
     <>
       <Container>

@@ -1,6 +1,5 @@
 import React from 'react'
 // Components
-import Container from '@/Components/UIKit/Container/Container'
 import NumberCounter from '@/Components/UIKit/CounterNumber/CounterNumber'
 import seedrandom from 'seedrandom'
 
@@ -66,7 +65,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className={Style.hero}>
-        <h4 className={Style.miniTitle}>Embrace The Blockchain Era</h4>
+        <h4 className={Style.miniTitle}>Embrace XERA</h4>
         <h2 className={Style.title}>
           Unlock the Best <span className={Style.colorFulTitle}>Era</span> of
           your Life

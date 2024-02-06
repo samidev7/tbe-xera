@@ -14,7 +14,7 @@ definitions:
 
           - export DEPLOYMENT_DIR=./out
           - export NEXT_PUBLIC_LOGIN_URL=%%NEXT_PUBLIC_LOGIN_URL%%
-          - export NEXT_PUBLIC_REGISTER_URL=%NEXT_PUBLIC_REGISTER_URL%
+          - export NEXT_PUBLIC_REGISTER_URL=%%NEXT_PUBLIC_REGISTER_URL%%
           - npm run build
 
           - |
@@ -43,7 +43,7 @@ definitions:
     - step: &deploy-staging
         image: amazon/aws-cli:2.15.13 
         name: 'Deployment to Staging'
-        deployment: staging
+        deployment: development
         script:
           - echo "Deploying to ${AWS_BUCKET_NAME}"
           - export DEPLOYMENT_DIR=./out

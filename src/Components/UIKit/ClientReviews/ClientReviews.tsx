@@ -50,7 +50,7 @@ const cards = [
     name: "Emily De Luca",
     position: "Graphic Designer",
     review:
-      "Blockchain Era has opened new doors for my design work. The platform is user-friendly and incredibly secure.",
+      "XERA has opened new doors for my design work. The platform is user-friendly and incredibly secure.",
   },
   {
     clientimage: Three,
@@ -64,7 +64,7 @@ const cards = [
     name: "Sofia Müller",
     position: "Software Engineer",
     review:
-      "Initially, I was skeptical, but TBE truly delivers. The educational content alone is worth it.",
+      "Initially, I was skeptical, but XERA truly delivers. The educational content alone is worth it.",
   },
   {
     clientimage: Six,
@@ -78,7 +78,7 @@ const cards = [
     name: "Clara Dupont",
     position: "Financial Analyst",
     review:
-      "The economic independence that TBE offers is empowering. I wish I'd found it sooner.",
+      "The economic independence that XERA offers is empowering. I wish I'd found it sooner.",
   },
   {
     clientimage: Nine,
@@ -130,14 +130,14 @@ const cards = [
     name: "Thomas Johansson",
     position: "IT Consultant",
     review:
-      "Blockchain Era is a game-changer. The educational modules have vastly expanded my understanding.",
+      "XERA is a game-changer. The educational modules have vastly expanded my understanding.",
   },
   {
     clientimage: Ten,
     name: "Hassan Al-Sayyid",
     position: "Entrepreneur",
     review:
-      "TBE’s reward system has kept me engaged. The products are top-notch.",
+      "XERA’s reward system has kept me engaged. The products are top-notch.",
   },
   {
     clientimage: Eleven,
@@ -158,7 +158,7 @@ const ClientReviews: React.FC = () => {
         <h1>What our clients say</h1>
         <h6>
           What our clients say matters to us, and we invite you to explore their
-          testimonials to understand why TBE is the preferred choice for
+          testimonials to understand why XERA is the preferred choice for
           blockchain solutions.
         </h6>
       </div>

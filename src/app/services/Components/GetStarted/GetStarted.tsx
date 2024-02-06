@@ -25,11 +25,11 @@ const data = [
   },
   {
     icon: startedIconTwo,
-    text: "TBE's reliable platforms and tools are backed by cutting-edge technology and security features to give you peace of mind.",
+    text: "XERA's reliable platforms and tools are backed by cutting-edge technology and security features to give you peace of mind.",
   },
   {
     icon: startedIconThree,
-    text: " Become part of a community that inspires innovation and collaborative success, pushing boundaries in the blockchain era.",
+    text: " Become part of a community that inspires innovation and collaborative success, pushing boundaries in XERA.",
   },
 ];
 

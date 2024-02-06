@@ -10,9 +10,9 @@
   position: relative;
 }
 .leftSide::after {
-  background-image: url('../../../../Assets/images/leftSidehC.svg');
+  background-image: url("../../../../Assets/images/leftSidehC.svg");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
   width: 42.438rem;
   height: 42.438rem;
   position: absolute;
@@ -26,9 +26,9 @@
 }
 
 .rightSide::after {
-  background-image: url('../../../../Assets/images/rightSideHalfCircle.svg');
+  background-image: url("../../../../Assets/images/rightSideHalfCircle.svg");
   background-repeat: no-repeat;
-  content: '';
+  content: "";
   width: 42.438rem;
   height: 42.438rem;
   position: absolute;
@@ -47,7 +47,7 @@
   justify-content: center;
   gap: 3rem;
   position: relative;
-  background-image: url('../../../../Assets/images/HeroBg.svg');
+  background-image: url("../../../../Assets/images/HeroBg.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -178,11 +178,11 @@
   }
 
   .hero h4 {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .hero h2 {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
 
   .arrowButton {

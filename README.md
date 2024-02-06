@@ -1,9 +1,9 @@
-# The Blockchain Era
+# XERA
 
 ## Project Description
 
-The Blockchain Era (TBE) is not just a platform, but a movement.
-With TBE, you'll dive into the world of blockchain-based products, connect with like-minded people everywhere, and pave your path as a digital entrepreneur.
+XERA is not just a platform, but a movement.
+With XERA, you'll dive into the world of blockchain-based products, connect with like-minded people everywhere, and pave your path as a digital entrepreneur.
 
 ## Project Stack
 
@@ -16,7 +16,7 @@ With TBE, you'll dive into the world of blockchain-based products, connect with 
 
 | Variable      | Value                                                         |
 | ------------- | ------------------------------------------------------------- |
-| WEBSITE_NAME  | TBE                                                           |
+| WEBSITE_NAME  | XERA                                                           |
 | MAX_FILE_SIZE | 1 _ 1024 _ 1024                                               |
 | LOGIN_URL     | https://dev.front-pt.pipeline.tbe.io/                         |
 | REGISTER_URL  | https://dev.front-pt.pipeline.myblockchainid.io/auth/register |
